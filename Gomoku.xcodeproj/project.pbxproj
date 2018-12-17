@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26EA41B321C7C50E0026DE77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA41B221C7C50E0026DE77 /* AppDelegate.swift */; };
+		26EA41B521C7C50E0026DE77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA41B421C7C50E0026DE77 /* ViewController.swift */; };
+		26EA41B821C7C50E0026DE77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EA41B621C7C50E0026DE77 /* Main.storyboard */; };
+		26EA41BA21C7C50F0026DE77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26EA41B921C7C50F0026DE77 /* Assets.xcassets */; };
+		26EA41BD21C7C50F0026DE77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EA41BB21C7C50F0026DE77 /* LaunchScreen.storyboard */; };
+		26EA41C821C7C50F0026DE77 /* GomokuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA41C721C7C50F0026DE77 /* GomokuTests.swift */; };
+		26EA41D321C7C50F0026DE77 /* GomokuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA41D221C7C50F0026DE77 /* GomokuUITests.swift */; };
+		26EA41D821C7C50F0026DE77 /* Gomoku WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 26EA41D721C7C50F0026DE77 /* Gomoku WatchKit App.app */; };
+		26EA41DE21C7C50F0026DE77 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EA41DC21C7C50F0026DE77 /* Interface.storyboard */; };
+		26EA41E021C7C5100026DE77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26EA41DF21C7C5100026DE77 /* Assets.xcassets */; };
+		26EA41E721C7C5100026DE77 /* Gomoku WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 26EA41E621C7C5100026DE77 /* Gomoku WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		26EA41EC21C7C5100026DE77 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA41EB21C7C5100026DE77 /* InterfaceController.swift */; };
+		26EA41EE21C7C5100026DE77 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA41ED21C7C5100026DE77 /* ExtensionDelegate.swift */; };
+		26EA41F021C7C5110026DE77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26EA41EF21C7C5110026DE77 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26EA41C421C7C50F0026DE77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26EA41A721C7C50E0026DE77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26EA41AE21C7C50E0026DE77;
+			remoteInfo = Gomoku;
+		};
+		26EA41CF21C7C50F0026DE77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26EA41A721C7C50E0026DE77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26EA41AE21C7C50E0026DE77;
+			remoteInfo = Gomoku;
+		};
+		26EA41D921C7C50F0026DE77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26EA41A721C7C50E0026DE77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26EA41D621C7C50F0026DE77;
+			remoteInfo = "Gomoku WatchKit App";
+		};
+		26EA41E821C7C5100026DE77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26EA41A721C7C50E0026DE77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26EA41E521C7C5100026DE77;
+			remoteInfo = "Gomoku WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26EA41F721C7C5110026DE77 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				26EA41E721C7C5100026DE77 /* Gomoku WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EA41FB21C7C5110026DE77 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				26EA41D821C7C50F0026DE77 /* Gomoku WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		26EA41AF21C7C50E0026DE77 /* Gomoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gomoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EA41B221C7C50E0026DE77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26EA41B421C7C50E0026DE77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26EA41B721C7C50E0026DE77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26EA41B921C7C50F0026DE77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26EA41BC21C7C50F0026DE77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26EA41BE21C7C50F0026DE77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EA41C321C7C50F0026DE77 /* GomokuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GomokuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EA41C721C7C50F0026DE77 /* GomokuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GomokuTests.swift; sourceTree = "<group>"; };
+		26EA41C921C7C50F0026DE77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EA41CE21C7C50F0026DE77 /* GomokuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GomokuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EA41D221C7C50F0026DE77 /* GomokuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GomokuUITests.swift; sourceTree = "<group>"; };
+		26EA41D421C7C50F0026DE77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EA41D721C7C50F0026DE77 /* Gomoku WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gomoku WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EA41DD21C7C50F0026DE77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		26EA41DF21C7C5100026DE77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26EA41E121C7C5100026DE77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EA41E621C7C5100026DE77 /* Gomoku WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Gomoku WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EA41EB21C7C5100026DE77 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		26EA41ED21C7C5100026DE77 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		26EA41EF21C7C5110026DE77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26EA41F121C7C5110026DE77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26EA41AC21C7C50E0026DE77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EA41C021C7C50F0026DE77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EA41CB21C7C50F0026DE77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EA41E321C7C5100026DE77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26EA41A621C7C50E0026DE77 = {
+			isa = PBXGroup;
+			children = (
+				26EA41B121C7C50E0026DE77 /* Gomoku */,
+				26EA41C621C7C50F0026DE77 /* GomokuTests */,
+				26EA41D121C7C50F0026DE77 /* GomokuUITests */,
+				26EA41DB21C7C50F0026DE77 /* Gomoku WatchKit App */,
+				26EA41EA21C7C5100026DE77 /* Gomoku WatchKit Extension */,
+				26EA41B021C7C50E0026DE77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26EA41B021C7C50E0026DE77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26EA41AF21C7C50E0026DE77 /* Gomoku.app */,
+				26EA41C321C7C50F0026DE77 /* GomokuTests.xctest */,
+				26EA41CE21C7C50F0026DE77 /* GomokuUITests.xctest */,
+				26EA41D721C7C50F0026DE77 /* Gomoku WatchKit App.app */,
+				26EA41E621C7C5100026DE77 /* Gomoku WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26EA41B121C7C50E0026DE77 /* Gomoku */ = {
+			isa = PBXGroup;
+			children = (
+				26EA41B221C7C50E0026DE77 /* AppDelegate.swift */,
+				26EA41B421C7C50E0026DE77 /* ViewController.swift */,
+				26EA41B621C7C50E0026DE77 /* Main.storyboard */,
+				26EA41B921C7C50F0026DE77 /* Assets.xcassets */,
+				26EA41BB21C7C50F0026DE77 /* LaunchScreen.storyboard */,
+				26EA41BE21C7C50F0026DE77 /* Info.plist */,
+			);
+			path = Gomoku;
+			sourceTree = "<group>";
+		};
+		26EA41C621C7C50F0026DE77 /* GomokuTests */ = {
+			isa = PBXGroup;
+			children = (
+				26EA41C721C7C50F0026DE77 /* GomokuTests.swift */,
+				26EA41C921C7C50F0026DE77 /* Info.plist */,
+			);
+			path = GomokuTests;
+			sourceTree = "<group>";
+		};
+		26EA41D121C7C50F0026DE77 /* GomokuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26EA41D221C7C50F0026DE77 /* GomokuUITests.swift */,
+				26EA41D421C7C50F0026DE77 /* Info.plist */,
+			);
+			path = GomokuUITests;
+			sourceTree = "<group>";
+		};
+		26EA41DB21C7C50F0026DE77 /* Gomoku WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				26EA41DC21C7C50F0026DE77 /* Interface.storyboard */,
+				26EA41DF21C7C5100026DE77 /* Assets.xcassets */,
+				26EA41E121C7C5100026DE77 /* Info.plist */,
+			);
+			path = "Gomoku WatchKit App";
+			sourceTree = "<group>";
+		};
+		26EA41EA21C7C5100026DE77 /* Gomoku WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				26EA41EB21C7C5100026DE77 /* InterfaceController.swift */,
+				26EA41ED21C7C5100026DE77 /* ExtensionDelegate.swift */,
+				26EA41EF21C7C5110026DE77 /* Assets.xcassets */,
+				26EA41F121C7C5110026DE77 /* Info.plist */,
+			);
+			path = "Gomoku WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26EA41AE21C7C50E0026DE77 /* Gomoku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26EA41FC21C7C5110026DE77 /* Build configuration list for PBXNativeTarget "Gomoku" */;
+			buildPhases = (
+				26EA41AB21C7C50E0026DE77 /* Sources */,
+				26EA41AC21C7C50E0026DE77 /* Frameworks */,
+				26EA41AD21C7C50E0026DE77 /* Resources */,
+				26EA41FB21C7C5110026DE77 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26EA41DA21C7C50F0026DE77 /* PBXTargetDependency */,
+			);
+			name = Gomoku;
+			productName = Gomoku;
+			productReference = 26EA41AF21C7C50E0026DE77 /* Gomoku.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26EA41C221C7C50F0026DE77 /* GomokuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26EA41FF21C7C5110026DE77 /* Build configuration list for PBXNativeTarget "GomokuTests" */;
+			buildPhases = (
+				26EA41BF21C7C50F0026DE77 /* Sources */,
+				26EA41C021C7C50F0026DE77 /* Frameworks */,
+				26EA41C121C7C50F0026DE77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26EA41C521C7C50F0026DE77 /* PBXTargetDependency */,
+			);
+			name = GomokuTests;
+			productName = GomokuTests;
+			productReference = 26EA41C321C7C50F0026DE77 /* GomokuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26EA41CD21C7C50F0026DE77 /* GomokuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26EA420221C7C5110026DE77 /* Build configuration list for PBXNativeTarget "GomokuUITests" */;
+			buildPhases = (
+				26EA41CA21C7C50F0026DE77 /* Sources */,
+				26EA41CB21C7C50F0026DE77 /* Frameworks */,
+				26EA41CC21C7C50F0026DE77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26EA41D021C7C50F0026DE77 /* PBXTargetDependency */,
+			);
+			name = GomokuUITests;
+			productName = GomokuUITests;
+			productReference = 26EA41CE21C7C50F0026DE77 /* GomokuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		26EA41D621C7C50F0026DE77 /* Gomoku WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26EA41F821C7C5110026DE77 /* Build configuration list for PBXNativeTarget "Gomoku WatchKit App" */;
+			buildPhases = (
+				26EA41D521C7C50F0026DE77 /* Resources */,
+				26EA41F721C7C5110026DE77 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26EA41E921C7C5100026DE77 /* PBXTargetDependency */,
+			);
+			name = "Gomoku WatchKit App";
+			productName = "Gomoku WatchKit App";
+			productReference = 26EA41D721C7C50F0026DE77 /* Gomoku WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		26EA41E521C7C5100026DE77 /* Gomoku WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26EA41F421C7C5110026DE77 /* Build configuration list for PBXNativeTarget "Gomoku WatchKit Extension" */;
+			buildPhases = (
+				26EA41E221C7C5100026DE77 /* Sources */,
+				26EA41E321C7C5100026DE77 /* Frameworks */,
+				26EA41E421C7C5100026DE77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gomoku WatchKit Extension";
+			productName = "Gomoku WatchKit Extension";
+			productReference = 26EA41E621C7C5100026DE77 /* Gomoku WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26EA41A721C7C50E0026DE77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Subph;
+				TargetAttributes = {
+					26EA41AE21C7C50E0026DE77 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					26EA41C221C7C50F0026DE77 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 26EA41AE21C7C50E0026DE77;
+					};
+					26EA41CD21C7C50F0026DE77 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 26EA41AE21C7C50E0026DE77;
+					};
+					26EA41D621C7C50F0026DE77 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					26EA41E521C7C5100026DE77 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 26EA41AA21C7C50E0026DE77 /* Build configuration list for PBXProject "Gomoku" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26EA41A621C7C50E0026DE77;
+			productRefGroup = 26EA41B021C7C50E0026DE77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26EA41AE21C7C50E0026DE77 /* Gomoku */,
+				26EA41C221C7C50F0026DE77 /* GomokuTests */,
+				26EA41CD21C7C50F0026DE77 /* GomokuUITests */,
+				26EA41D621C7C50F0026DE77 /* Gomoku WatchKit App */,
+				26EA41E521C7C5100026DE77 /* Gomoku WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26EA41AD21C7C50E0026DE77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EA41BD21C7C50F0026DE77 /* LaunchScreen.storyboard in Resources */,
+				26EA41BA21C7C50F0026DE77 /* Assets.xcassets in Resources */,
+				26EA41B821C7C50E0026DE77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EA41C121C7C50F0026DE77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EA41CC21C7C50F0026DE77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EA41D521C7C50F0026DE77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EA41E021C7C5100026DE77 /* Assets.xcassets in Resources */,
+				26EA41DE21C7C50F0026DE77 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EA41E421C7C5100026DE77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EA41F021C7C5110026DE77 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26EA41AB21C7C50E0026DE77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EA41B521C7C50E0026DE77 /* ViewController.swift in Sources */,
+				26EA41B321C7C50E0026DE77 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EA41BF21C7C50F0026DE77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EA41C821C7C50F0026DE77 /* GomokuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EA41CA21C7C50F0026DE77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EA41D321C7C50F0026DE77 /* GomokuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26EA41E221C7C5100026DE77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EA41EE21C7C5100026DE77 /* ExtensionDelegate.swift in Sources */,
+				26EA41EC21C7C5100026DE77 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26EA41C521C7C50F0026DE77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26EA41AE21C7C50E0026DE77 /* Gomoku */;
+			targetProxy = 26EA41C421C7C50F0026DE77 /* PBXContainerItemProxy */;
+		};
+		26EA41D021C7C50F0026DE77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26EA41AE21C7C50E0026DE77 /* Gomoku */;
+			targetProxy = 26EA41CF21C7C50F0026DE77 /* PBXContainerItemProxy */;
+		};
+		26EA41DA21C7C50F0026DE77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26EA41D621C7C50F0026DE77 /* Gomoku WatchKit App */;
+			targetProxy = 26EA41D921C7C50F0026DE77 /* PBXContainerItemProxy */;
+		};
+		26EA41E921C7C5100026DE77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26EA41E521C7C5100026DE77 /* Gomoku WatchKit Extension */;
+			targetProxy = 26EA41E821C7C5100026DE77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26EA41B621C7C50E0026DE77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26EA41B721C7C50E0026DE77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26EA41BB21C7C50F0026DE77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26EA41BC21C7C50F0026DE77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		26EA41DC21C7C50F0026DE77 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26EA41DD21C7C50F0026DE77 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26EA41F221C7C5110026DE77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26EA41F321C7C5110026DE77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26EA41F521C7C5110026DE77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78ZW2C9N3C;
+				INFOPLIST_FILE = "Gomoku WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.subph.watchOS.Gomoku.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		26EA41F621C7C5110026DE77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78ZW2C9N3C;
+				INFOPLIST_FILE = "Gomoku WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.subph.watchOS.Gomoku.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		26EA41F921C7C5110026DE77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78ZW2C9N3C;
+				IBSC_MODULE = Gomoku_WatchKit_Extension;
+				INFOPLIST_FILE = "Gomoku WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.subph.watchOS.Gomoku.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		26EA41FA21C7C5110026DE77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78ZW2C9N3C;
+				IBSC_MODULE = Gomoku_WatchKit_Extension;
+				INFOPLIST_FILE = "Gomoku WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.subph.watchOS.Gomoku.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		26EA41FD21C7C5110026DE77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78ZW2C9N3C;
+				INFOPLIST_FILE = Gomoku/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.subph.watchOS.Gomoku;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26EA41FE21C7C5110026DE77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78ZW2C9N3C;
+				INFOPLIST_FILE = Gomoku/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.subph.watchOS.Gomoku;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		26EA420021C7C5110026DE77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78ZW2C9N3C;
+				INFOPLIST_FILE = GomokuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.subph.watchOS.GomokuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gomoku.app/Gomoku";
+			};
+			name = Debug;
+		};
+		26EA420121C7C5110026DE77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78ZW2C9N3C;
+				INFOPLIST_FILE = GomokuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.subph.watchOS.GomokuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gomoku.app/Gomoku";
+			};
+			name = Release;
+		};
+		26EA420321C7C5110026DE77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78ZW2C9N3C;
+				INFOPLIST_FILE = GomokuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.subph.watchOS.GomokuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gomoku;
+			};
+			name = Debug;
+		};
+		26EA420421C7C5110026DE77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78ZW2C9N3C;
+				INFOPLIST_FILE = GomokuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.subph.watchOS.GomokuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gomoku;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26EA41AA21C7C50E0026DE77 /* Build configuration list for PBXProject "Gomoku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EA41F221C7C5110026DE77 /* Debug */,
+				26EA41F321C7C5110026DE77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26EA41F421C7C5110026DE77 /* Build configuration list for PBXNativeTarget "Gomoku WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EA41F521C7C5110026DE77 /* Debug */,
+				26EA41F621C7C5110026DE77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26EA41F821C7C5110026DE77 /* Build configuration list for PBXNativeTarget "Gomoku WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EA41F921C7C5110026DE77 /* Debug */,
+				26EA41FA21C7C5110026DE77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26EA41FC21C7C5110026DE77 /* Build configuration list for PBXNativeTarget "Gomoku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EA41FD21C7C5110026DE77 /* Debug */,
+				26EA41FE21C7C5110026DE77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26EA41FF21C7C5110026DE77 /* Build configuration list for PBXNativeTarget "GomokuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EA420021C7C5110026DE77 /* Debug */,
+				26EA420121C7C5110026DE77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26EA420221C7C5110026DE77 /* Build configuration list for PBXNativeTarget "GomokuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EA420321C7C5110026DE77 /* Debug */,
+				26EA420421C7C5110026DE77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26EA41A721C7C50E0026DE77 /* Project object */;
+}
