@@ -20,10 +20,10 @@ class InterfaceController: WKInterfaceController {
     let boxSize: CGFloat = 30
     
     var loading = false
-    var scale: CGFloat = 1
     var scaledSize: CGFloat = 450
     var scaledHalf: CGFloat = 225
     var middle: CGPoint = CGPoint(x: 225, y: 225)
+    var scale: CGFloat = 1
     var left: CGFloat = 0
     var bottom: CGFloat = 0
     

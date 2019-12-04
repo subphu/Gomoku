@@ -9,12 +9,13 @@ class GameInterfaceController: WKInterfaceController {
     
     @IBOutlet weak var spriteKit: WKInterfaceSKScene!
 
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         crownSequencer.delegate = self
         crownSequencer.focus()
-        let scene = BoardScene()
-        scene.settupBoard(size: 450)
+        let scene = BoardScene(size: CGSize(width: 450, height: 450))
+        scene.settupBoard()
         spriteKit.presentScene(scene)
     }
     
