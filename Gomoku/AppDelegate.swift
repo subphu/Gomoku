@@ -1,8 +1,3 @@
-//
-//  AppDelegate.swift
-//  Gomoku
-//
-//  Created by Subroto Prasetyo Hudiono on 12/17/18.
 //  Copyright © 2018 Subph. All rights reserved.
 //
 

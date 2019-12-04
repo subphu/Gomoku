@@ -1,8 +1,3 @@
-//
-//  AI.swift
-//  Gomoku
-//
-//  Created by Subroto Prasetyo Hudiono on 2019/11/29.
 //  Copyright © 2019 Subph. All rights reserved.
 //
 

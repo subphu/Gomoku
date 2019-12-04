@@ -1,8 +1,3 @@
-//
-//  Space.swift
-//  Gomoku
-//
-//  Created by Subroto Prasetyo Hudiono on 2019/11/27.
 //  Copyright © 2019 Subph. All rights reserved.
 //
 
