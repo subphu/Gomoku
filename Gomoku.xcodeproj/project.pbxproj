@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26D5D131238E41B6007DCBF7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5D130238E41B6007DCBF7 /* Board.swift */; };
+		26D5D132238E41B6007DCBF7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5D130238E41B6007DCBF7 /* Board.swift */; };
+		26D5D137238E5478007DCBF7 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5D136238E5478007DCBF7 /* Space.swift */; };
+		26D5D138238E5478007DCBF7 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5D136238E5478007DCBF7 /* Space.swift */; };
+		26E5EE892390F9A300F2E3B2 /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E5EE882390F9A300F2E3B2 /* AI.swift */; };
+		26E5EE8A2390F9A300F2E3B2 /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E5EE882390F9A300F2E3B2 /* AI.swift */; };
 		26EA41B321C7C50E0026DE77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA41B221C7C50E0026DE77 /* AppDelegate.swift */; };
 		26EA41B521C7C50E0026DE77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA41B421C7C50E0026DE77 /* ViewController.swift */; };
 		26EA41B821C7C50E0026DE77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EA41B621C7C50E0026DE77 /* Main.storyboard */; };
@@ -80,6 +86,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		26D5D130238E41B6007DCBF7 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		26D5D136238E5478007DCBF7 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
+		26E5EE882390F9A300F2E3B2 /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
 		26EA41AF21C7C50E0026DE77 /* Gomoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gomoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26EA41B221C7C50E0026DE77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26EA41B421C7C50E0026DE77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +213,9 @@
 		26EA41EA21C7C5100026DE77 /* Gomoku WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				26E5EE882390F9A300F2E3B2 /* AI.swift */,
+				26D5D136238E5478007DCBF7 /* Space.swift */,
+				26D5D130238E41B6007DCBF7 /* Board.swift */,
 				26EA41EB21C7C5100026DE77 /* InterfaceController.swift */,
 				26EA41ED21C7C5100026DE77 /* ExtensionDelegate.swift */,
 				26EA41EF21C7C5110026DE77 /* Assets.xcassets */,
@@ -404,8 +416,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D5D137238E5478007DCBF7 /* Space.swift in Sources */,
 				26EA41B521C7C50E0026DE77 /* ViewController.swift in Sources */,
 				26EA41B321C7C50E0026DE77 /* AppDelegate.swift in Sources */,
+				26D5D131238E41B6007DCBF7 /* Board.swift in Sources */,
+				26E5EE892390F9A300F2E3B2 /* AI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,8 +444,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D5D138238E5478007DCBF7 /* Space.swift in Sources */,
 				26EA41EE21C7C5100026DE77 /* ExtensionDelegate.swift in Sources */,
 				26EA41EC21C7C5100026DE77 /* InterfaceController.swift in Sources */,
+				26D5D132238E41B6007DCBF7 /* Board.swift in Sources */,
+				26E5EE8A2390F9A300F2E3B2 /* AI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,7 +716,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.subph.watchOS.Gomoku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -716,7 +734,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.subph.watchOS.Gomoku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
