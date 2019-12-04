@@ -24,5 +24,22 @@ class BoardScene: SKScene {
         scaledHalf = scaledSize / 2
         middle = CGPoint(x: scaledHalf, y: scaledHalf)
         board = Board(size: Int(fullSize / boxSize))
+        drawLines()
     }
+    
+    func drawLines() {
+        let totalLines = Int(scaledSize / boxSize)
+        let startX = boxSize - left.truncatingRemainder(dividingBy: boxSize)
+        let startY = boxSize - bottom.truncatingRemainder(dividingBy: boxSize)
+        for i in 0...totalLines {
+            let idx = CGFloat(i) * boxSize
+            let x = startX + idx
+            let y = startY + idx
+            var verPts = [CGPoint(x: x, y: 0), CGPoint(x: x, y: scaledSize)]
+            var horPts = [CGPoint(x: 0, y: y), CGPoint(x: scaledSize, y: y)]
+            addChild(SKShapeNode(points: &verPts, count: 2))
+            addChild(SKShapeNode(points: &horPts, count: 2))
+        }
+    }
+
 }
