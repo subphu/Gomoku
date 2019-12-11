@@ -8,10 +8,13 @@ class GameScene: SKScene {
     var boardNode: BoardNode = BoardNode()
     var halfSize: CGSize = CGSize()
     var boardSize: CGFloat = 0
+    var minScale: CGFloat = 1
+    var maxScale: CGFloat = 3
     
     func settupBoard() {
         scaleMode = .resizeFill
         anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        
         
         halfSize = CGSize(width: size.width/2, height: size.height/2)
         boardSize = max(size.width, size.height)
@@ -20,6 +23,7 @@ class GameScene: SKScene {
         boardNode = BoardNode()
         boardNode.prepare(size: boardSize)
         boardNode.position = CGPoint(x: -boardNode.size/2, y: -boardNode.size/2)
+        boardNode.setScale(minScale)
         addChild(boardNode)
     }
     
@@ -38,11 +42,10 @@ class GameScene: SKScene {
     
     func zoom(by multiplier: CGFloat) {
         var scale = boardNode.xScale * multiplier
-        scale = min(max(scale, 1), 3)
+        scale = min(max(scale, minScale), maxScale)
         let moveMultiplier = scale / boardNode.xScale
         
-        boardNode.xScale = scale
-        boardNode.yScale = scale
+        boardNode.setScale(scale)
         boardNode.position.x *= moveMultiplier
         boardNode.position.y *= moveMultiplier
         checkBound()
