@@ -31,4 +31,12 @@ class GameViewController: UIViewController {
         sender.setTranslation(CGPoint(x: 0, y: 0), in: skView)
     }
     
+    @IBAction func pinch(_ sender: UIPinchGestureRecognizer) {
+        guard sender.state == .changed else { return }
+        guard sender.scale > 0.8 && sender.scale < 1.2 else { return }
+        scene.zoom(by: sender.scale)
+        sender.scale = 1
+    }
+    
+    
 }

@@ -28,6 +28,19 @@ class GameScene: SKScene {
         boardNode.position.y += translation.y
         checkBound()
     }
+    
+    func zoom(by multiplier: CGFloat) {
+        var scale = boardNode.xScale * multiplier
+        scale = min(max(scale, 1), 3)
+        let moveMultiplier = scale / boardNode.xScale
+        
+        boardNode.xScale = scale
+        boardNode.yScale = scale
+        boardNode.position.x *= moveMultiplier
+        boardNode.position.y *= moveMultiplier
+        checkBound()
+    }
+    
     func checkBound() {
         boardNode.position.x = max(boardNode.position.x, halfSize.width - boardSize * boardNode.xScale)
         boardNode.position.y = max(boardNode.position.y, halfSize.height - boardSize * boardNode.yScale)
