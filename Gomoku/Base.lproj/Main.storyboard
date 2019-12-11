@@ -22,13 +22,34 @@
                             </skView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="kGm-9p-CKs" appends="YES" id="PGi-mg-e8t"/>
+                            <outletCollection property="gestureRecognizers" destination="08V-se-V5C" appends="YES" id="eS3-yP-FAb"/>
+                            <outletCollection property="gestureRecognizers" destination="Tb9-zL-Xa3" appends="YES" id="4ar-Bw-ime"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="skView" destination="hdk-0S-6Gi" id="K3J-8e-Evi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="kGm-9p-CKs">
+                    <connections>
+                        <action selector="tap:" destination="BYZ-38-t0r" id="oEc-Y5-DY1"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pinchGestureRecognizer id="08V-se-V5C">
+                    <connections>
+                        <action selector="pinch:" destination="BYZ-38-t0r" id="6xs-LA-L7K"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Tb9-zL-Xa3">
+                    <connections>
+                        <action selector="pan:" destination="BYZ-38-t0r" id="0rL-Cr-jft"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="140.57971014492756" y="110.49107142857143"/>
         </scene>

@@ -14,7 +14,7 @@ class GameInterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         crownSequencer.delegate = self
         crownSequencer.focus()
-        let scene = BoardScene(size: CGSize(width: 450, height: 450))
+        let scene = GameScene(size: CGSize(width: 450, height: 450))
         scene.settupBoard()
         spriteKit.presentScene(scene)
     }
