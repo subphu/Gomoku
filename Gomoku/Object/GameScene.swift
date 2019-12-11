@@ -23,4 +23,15 @@ class GameScene: SKScene {
         addChild(boardNode)
     }
     
+    func move(translation: CGPoint) {
+        boardNode.position.x += translation.x
+        boardNode.position.y += translation.y
+        checkBound()
+    }
+    func checkBound() {
+        boardNode.position.x = max(boardNode.position.x, halfSize.width - boardSize * boardNode.xScale)
+        boardNode.position.y = max(boardNode.position.y, halfSize.height - boardSize * boardNode.yScale)
+        boardNode.position.x = min(boardNode.position.x, -halfSize.width)
+        boardNode.position.y = min(boardNode.position.y, -halfSize.height)
+    }
 }

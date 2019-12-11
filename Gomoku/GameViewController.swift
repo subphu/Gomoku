@@ -22,4 +22,13 @@ class GameViewController: UIViewController {
         skView.presentScene(scene)
     }
 
+    
+    @IBAction func pan(_ sender: UIPanGestureRecognizer) {
+        // y direction in scene is inversed
+        let translation = sender.translation(in: skView)
+        let normalized = CGPoint(x: translation.x, y: -translation.y)
+        scene.move(translation: normalized)
+        sender.setTranslation(CGPoint(x: 0, y: 0), in: skView)
+    }
+    
 }
