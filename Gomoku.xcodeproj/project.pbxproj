@@ -13,6 +13,7 @@
 		2649FDB12397B98300A35139 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2649FDB02397B98300A35139 /* GameViewController.swift */; };
 		265F6818239F9432008A388A /* BoardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F6817239F9432008A388A /* BoardNode.swift */; };
 		265F6819239F9432008A388A /* BoardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265F6817239F9432008A388A /* BoardNode.swift */; };
+		2678E3FF23A0F43300260EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2678E3FE23A0F43300260EE3 /* Assets.xcassets */; };
 		26D5D131238E41B6007DCBF7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5D130238E41B6007DCBF7 /* Board.swift */; };
 		26D5D132238E41B6007DCBF7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5D130238E41B6007DCBF7 /* Board.swift */; };
 		26D5D137238E5478007DCBF7 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5D136238E5478007DCBF7 /* Space.swift */; };
@@ -28,7 +29,6 @@
 		26EA41D321C7C50F0026DE77 /* GomokuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA41D221C7C50F0026DE77 /* GomokuUITests.swift */; };
 		26EA41D821C7C50F0026DE77 /* Gomoku WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 26EA41D721C7C50F0026DE77 /* Gomoku WatchKit App.app */; };
 		26EA41DE21C7C50F0026DE77 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EA41DC21C7C50F0026DE77 /* Interface.storyboard */; };
-		26EA41E021C7C5100026DE77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26EA41DF21C7C5100026DE77 /* Assets.xcassets */; };
 		26EA41E721C7C5100026DE77 /* Gomoku WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 26EA41E621C7C5100026DE77 /* Gomoku WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		26EA41EC21C7C5100026DE77 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA41EB21C7C5100026DE77 /* InterfaceController.swift */; };
 		26EA41EE21C7C5100026DE77 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA41ED21C7C5100026DE77 /* ExtensionDelegate.swift */; };
@@ -96,6 +96,7 @@
 		2649FDAE2397B1DF00A35139 /* GameInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInterfaceController.swift; sourceTree = "<group>"; };
 		2649FDB02397B98300A35139 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		265F6817239F9432008A388A /* BoardNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardNode.swift; sourceTree = "<group>"; };
+		2678E3FE23A0F43300260EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26D5D130238E41B6007DCBF7 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		26D5D136238E5478007DCBF7 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
 		26E5EE882390F9A300F2E3B2 /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
@@ -114,7 +115,6 @@
 		26EA41D421C7C50F0026DE77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26EA41D721C7C50F0026DE77 /* Gomoku WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gomoku WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26EA41DD21C7C50F0026DE77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		26EA41DF21C7C5100026DE77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26EA41E121C7C5100026DE77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26EA41E621C7C5100026DE77 /* Gomoku WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Gomoku WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26EA41EB21C7C5100026DE77 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
@@ -228,7 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				26EA41DC21C7C50F0026DE77 /* Interface.storyboard */,
-				26EA41DF21C7C5100026DE77 /* Assets.xcassets */,
+				2678E3FE23A0F43300260EE3 /* Assets.xcassets */,
 				26EA41E121C7C5100026DE77 /* Info.plist */,
 			);
 			path = "Gomoku WatchKit App";
@@ -364,6 +364,7 @@
 					};
 					26EA41E521C7C5100026DE77 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -418,7 +419,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26EA41E021C7C5100026DE77 /* Assets.xcassets in Resources */,
+				2678E3FF23A0F43300260EE3 /* Assets.xcassets in Resources */,
 				26EA41DE21C7C50F0026DE77 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,7 +666,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
@@ -687,7 +688,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
