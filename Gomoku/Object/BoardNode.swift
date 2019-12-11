@@ -9,18 +9,18 @@ class BoardNode: SKNode {
     
     var size: CGFloat = 450
     var boxSize : CGFloat = 30
+    var boardSize: Int = 15
     var board: Board = Board(size: 15)
     
     func prepare(size: CGFloat) {
         self.size = size
-        let boardSize = Int(size / boxSize)
         boxSize = size / CGFloat(boardSize)
         board = Board(size: boardSize)
         addLines()
     }
     
     func addLines() {
-        for i in 0...board.size {
+        for i in 0...boardSize {
             let idx = CGFloat(i) * boxSize
             var verPts = [CGPoint(x: idx, y: 0), CGPoint(x: idx, y: size)]
             var horPts = [CGPoint(x: 0, y: idx), CGPoint(x: size, y: idx)]
