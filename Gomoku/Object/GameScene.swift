@@ -24,6 +24,7 @@ class GameScene: SKScene {
         boardNode.prepare(size: boardSize)
         boardNode.position = CGPoint(x: -boardNode.size/2, y: -boardNode.size/2)
         boardNode.setScale(minScale)
+        boardNode.useAI(turn: 0)
         addChild(boardNode)
     }
     
@@ -31,7 +32,7 @@ class GameScene: SKScene {
         var boardPosition = CGPoint()
         boardPosition.x = (position.x - boardNode.position.x) / boardNode.xScale
         boardPosition.y = (position.y - boardNode.position.y) / boardNode.xScale
-        boardNode.addStone(in: boardPosition)
+        boardNode.play(in: boardPosition)
     }
     
     func move(translation: CGPoint) {
