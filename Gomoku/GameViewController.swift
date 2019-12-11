@@ -21,7 +21,15 @@ class GameViewController: UIViewController {
         skView.ignoresSiblingOrder = true
         skView.presentScene(scene)
     }
-
+    
+    @IBAction func tap(_ sender: UITapGestureRecognizer) {
+        // location start in top left, scene start in middle
+        let location = sender.location(in: skView)
+        var normalized = CGPoint()
+        normalized.x = location.x - scene.halfSize.width
+        normalized.y = scene.halfSize.height - location.y
+        scene.tap(in: normalized)
+    }
     
     @IBAction func pan(_ sender: UIPanGestureRecognizer) {
         // y direction in scene is inversed

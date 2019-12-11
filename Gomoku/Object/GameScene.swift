@@ -23,6 +23,13 @@ class GameScene: SKScene {
         addChild(boardNode)
     }
     
+    func tap(in position: CGPoint) {
+        var boardPosition = CGPoint()
+        boardPosition.x = (position.x - boardNode.position.x) / boardNode.xScale
+        boardPosition.y = (position.y - boardNode.position.y) / boardNode.xScale
+        boardNode.addStone(in: boardPosition)
+    }
+    
     func move(translation: CGPoint) {
         boardNode.position.x += translation.x
         boardNode.position.y += translation.y
