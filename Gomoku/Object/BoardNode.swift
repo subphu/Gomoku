@@ -13,6 +13,7 @@ class BoardNode: SKNode {
     var board: Board = Board(size: 15)
     var ai: AI?
     var aiTurn: Int = -1
+    var locked: Bool = false
     
     func prepare(size: CGFloat, withAI: Bool = false) {
         self.size = size
@@ -40,14 +41,8 @@ class BoardNode: SKNode {
         addStone(position, position)
     }
     
-    func playAI() {
-        guard let ai = ai else { return }
-        let (x, y) = ai.nextMove()
-        placeInBoard(x, y)
-        addStone(x, y)
-    }
-    
     func play(in position: CGPoint) {
+        guard !locked else { return }
         let x = Int(position.x / boxSize)
         let y = Int(position.y / boxSize)
         
@@ -58,14 +53,28 @@ class BoardNode: SKNode {
         playAI()
     }
     
-    func placeInBoard(_ x: Int, _ y: Int) {
+    func playAI() {
+        let queue = DispatchQueue(label: "AI", qos: .userInitiated)
+        queue.async { self.runAI() }
+    }
+    
+    private func runAI() {
+        guard let ai = ai else { return }
+        locked = true
+        let (x, y) = ai.nextMove()
+        placeInBoard(x, y)
+        addStone(x, y)
+        locked = false
+    }
+    
+    private func placeInBoard(_ x: Int, _ y: Int) {
         guard 0 <= x && x < board.size else { return }
         guard 0 <= y && y < board.size else { return }
         guard board.map[x][y].empty else { return }
         _ = board.placeIn(x, y)
     }
     
-    func addStone(_ x: Int, _ y: Int) {
+    private func addStone(_ x: Int, _ y: Int) {
         let stoneSize = boxSize * 0.7
         let stone = SKSpriteNode(imageNamed: player[board.turn % 2])
         stone.position.x = CGFloat(x) * boxSize
